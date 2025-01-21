@@ -30,6 +30,8 @@ public class RatingCountJob {
         TextInputFormat.addInputPath(job, new Path(args[0]));
         TextOutputFormat.setOutputPath(job, new Path(args[1]));
 
+        job.setNumReduceTasks(1);
+
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }

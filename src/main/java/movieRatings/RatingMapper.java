@@ -16,7 +16,7 @@ public class RatingMapper extends Mapper<Object, Text, IntWritable, IntWritable>
     @Override
     public void map(Object key, Text value, Context context) throws IOException, InterruptedException {
 
-        String[] parts = value.toString().split("\\s+");
+        String[] parts = value.toString().split("\\t+");
 
 
         if (parts.length == 4) {
