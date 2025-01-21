@@ -4,11 +4,9 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 import movieRatings.RatingCountJob;
-
 import java.io.IOException;
 
 public class RatingReducer extends Reducer<IntWritable, IntWritable, IntWritable, IntWritable> {
-
     private IntWritable result = new IntWritable();
 
     @Override

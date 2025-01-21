@@ -9,10 +9,9 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 public class RatingCountJob {
-
     public static void main(String[] args) throws Exception {
         if (args.length != 2) {
-            System.err.println("Usage: RatingCountJob <input path> <output path>");
+            System.err.println("Error: Expected two arguments");
             System.exit(-1);
         }
 
